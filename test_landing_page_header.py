@@ -45,8 +45,6 @@ class TestLandingPageHeader:
 
     def setup(self):
         options = ChromeOptions()
-        # options.add_argument('--no-sandbox')
-        # options.add_argument('--incognito')
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_argument("--disable-extensions")
         options.add_experimental_option('useAutomationExtension', False)
